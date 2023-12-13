@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+* {
+  font-family: 'Gowun Dodum', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+.album_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-image: url('https://images.unsplash.com/photo-1511992243105-2992b3fd0410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.album_title h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+.album_title button {
+  width: 150px;
+  height: 50px;
+  border: 1.5px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+.album_form {
+  margin: 0 auto;
+  width: 450px;
+  height: 320px;
+  border: 2px solid #a0a0a0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.album_form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.album_form form .album_input {
+  width: 100%;
+}
+.album_form form .album_input label {
+  display: none;
+}
+.album_form form .album_input input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #c8c8c8;
+}
+.album_form form .input_btn button:first-child {
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  background-color: #282828;
+  color: white;
+}
+.album_form form .input_btn button:last-child {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #282828;
+  border-radius: 3px;
+  background-color: white;
+}
+.album_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.album_image_container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+.album_image_container .mycards {
+  width: 280px;
+  margin: 10px;
+}
+.album_image_container .mycards:nth-child(4n + 0) {
+  /* margin-right: 0; */
+}
+.album_image_container .mycards img {
+  display: block;
+  width: 100%;
+  height: 307px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.album_image_container .mycards .album_content {
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-bottom: none;
+}
+.album_image_container .mycards .album_content h1 {
+  font-size: 18px;
+  color: #5c5c5c;
+}
+.album_image_container .mycards .album_content p {
+  font-size: 16px;
+  color: #5f5f5f;
+}
+.album_image_container .mycards .album_data {
+  padding: 10px 12px;
+  background-color: #f1f1f1;
+  border: 1px solid #dcdcdc;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.album_image_container .mycards .album_data strong {
+  font-size: 14px;
+  color: #6e6e6e;
+}
